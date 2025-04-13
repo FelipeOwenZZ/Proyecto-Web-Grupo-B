@@ -1,0 +1,41 @@
+strong {
+    color: red;
+  }
+
+  /* Estilo para la franja con imagen */
+  #top-image-banner {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 250px; /* Altura de la franja (ajústala como quieras) */
+    /* --- ¡¡¡ CAMBIA ESTA RUTA !!! --- */
+    background-image: url('Fotos/Banner.jpg');
+    background-size: cover; /* Hace que la imagen cubra el área, recortando si es necesario */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+
+  h1 {
+    font-size: 50px;
+    color: black; /* O blanco si contrasta mejor con tu fondo */
+    border: solid #000000;
+    text-align: center;
+    /* Ajusta el margen superior para separarlo de la imagen */
+    margin-top: 40px;
+    /* Añadimos margen inferior por si acaso */
+    margin-bottom: 20px;
+  }
+
+  body {
+    background-color: #263647; /* Este será el fondo debajo de la imagen */
+    margin: 0;
+    padding: 0;
+  }
+
+  #playPauseBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que el botón esté sobre la imagen */
+  }
