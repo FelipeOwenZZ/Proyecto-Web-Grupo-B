@@ -4,32 +4,59 @@
 <meta charset="UTF-8" />
 <title>Outer Wilds</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/Style.css" />
+>>>>>>>>> Temporary merge branch 2
 </head>
 <body>
-  <header>
-    <form>
-      <label for="usuario">Usuario</label>
-      <input type="text" name="usuario" id="usuario" />
-      <label for="contraseña">Contraseña</label>
-      <input type="password" name="contraseña" id="contraseña" />
-      <button> Iniciar Sesión</button>
-    </form>  
-  </header>
-  <main>
-    <section> 
-    <h1>Outer Wilds</h1>
-    <aside>
-      
-    </aside >
-  </section>
+<<<<<<<<< Temporary merge branch 1
+<h1>Outer Wild</h1>
+=========
+  <!-- El botón se posicionará sobre la imagen gracias a position:absolute y z-index -->
+  <button id="playPauseBtn">Pause</button>
 
+  <!-- La franja con la imagen de fondo -->
+  <div id="top-image-banner"></div>
 
-</main>
-  <footer>
+  <!-- Resto del contenido -->
+  <h1>Outer Wilds</h1>
 
-  </footer>
-  
+  <audio id="cancionOuterWilds" src="Cancion/OuterWilds.mp3" autoplay loop>
+    Tu navegador no soporta el elemento de audio.
+  </audio>
 
+  <script>
+    const audio = document.getElementById('cancionOuterWilds');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+
+    let userInteracted = !audio.paused;
+
+    function togglePlayPause() {
+      if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        playPauseBtn.textContent = 'Play';
+      }
+      userInteracted = true;
+    }
+
+    playPauseBtn.addEventListener('click', togglePlayPause);
+
+    audio.addEventListener('canplay', () => {
+        if (audio.paused && !userInteracted) {
+            playPauseBtn.textContent = 'Play';
+        } else {
+            playPauseBtn.textContent = 'Pause';
+            if (!audio.paused) userInteracted = true;
+        }
+    });
+
+    audio.addEventListener('ended', () => {
+      playPauseBtn.textContent = 'Play';
+    });
+
+  </script>
+>>>>>>>>> Temporary merge branch 2
 </body>
 </html>
