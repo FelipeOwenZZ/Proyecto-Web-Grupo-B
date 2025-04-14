@@ -15,6 +15,21 @@
       <input class= "input" type="password" name="contraseña" id="contraseña" />
       <button type="submit"> Iniciar Sesión</button>
     </form>  
+
+    <div class="container">
+      <label>
+        <input class="play-btn" type="checkbox" id="audioControl" title="Toggle background music" aria-label="Toggle background music">
+        <div class="play-icon"></div>
+        <div class="pause-icon"></div>
+      </label>
+      <audio id="backgroundMusic" loop>
+        <source src="Cancion/OuterWilds.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+
+
+
   </header>
   <main>
 <img src="Fotos/Titulo.png" alt="Titulofoto" id="title-image">
@@ -46,18 +61,35 @@
       <li>texto</li>
     </ul>
   </div>
+  
     <aside>
       <img src="Fotos/Foto2.webp" alt="Foto2" id="foto2"/>
       <div><img src="Gifs/gif2.gif" alt="gif2" class="gif"/></div>
     </aside>
   </section>
-
-
+  <section><img src="Fotos/Decoración1.png" alt="Decoración1" id="decoracion1"></section>
+  <section>
+    <h1 id="nominado">Ganador del premio a Mejor Juego en los BAFTA Games Awards de 2020 
+      y nombrado Juego del Año 2019 por Giant Bomb, Polygon, Eurogamer y The Guardian.</h1>
+  </section>
 </main>
   <footer>
 
   </footer>
   
-
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const audioControl = document.getElementById('audioControl');
+      const backgroundMusic = document.getElementById('backgroundMusic');
+      
+      audioControl.addEventListener('change', function() {
+        if (this.checked) {
+          backgroundMusic.play();
+        } else {
+          backgroundMusic.pause();
+        }
+      });
+    });
+  </script>
 </body>
 </html>
