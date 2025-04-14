@@ -1,17 +1,21 @@
-body {
-    background-color: #0c0c0c;
-    font-family: Arial, sans-serif;
-}
 
 header {
     height: 450px;
-    background-color: #0c0c0c;
+    background-color: black;
     background-image: url("Fotos/Banner.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
-
 }
+body {
+    background-image: url(Fotos/Fondo.png);
+    background-size: height=500%;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+
 
 #title-image {
     height: 100px;
@@ -63,9 +67,15 @@ form {
 
 section {
     display: flex;
-    align-items: flex-start;
+    align-items: auto;
     justify-content: space-between;
-    padding: 0px 400px;
+    padding: 0px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(14, 13, 13, 0.8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 aside {
