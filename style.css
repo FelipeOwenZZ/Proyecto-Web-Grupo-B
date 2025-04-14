@@ -1,0 +1,20 @@
+body {
+    background-color: #0c0c0c;
+    font-family: Arial, sans-serif;
+}
+header {
+    height: 450px;
+    background-color: #0c0c0c;
+    background-image: url("Fotos/Banner.jpg");
+    background-size: 100% auto;
+    background-position: center;
+       
+}
+
+* {
+   color: whitesmoke; 
+}
+
+h1  {
+  text-align: center; 
+}
