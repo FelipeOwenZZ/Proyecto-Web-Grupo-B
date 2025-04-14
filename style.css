@@ -14,7 +14,21 @@ header {
 * {
    color: whitesmoke; 
 }
-
-h1  {
-  text-align: center; 
+button  {
+    background-color: #0c0c0c;
+    border: none;
+    color: whitesmoke; 
+}
+form {
+ text-align: right; 
+ padding: 20px;
+}
+section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+aside {
+    float: right;
 }
