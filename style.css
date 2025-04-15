@@ -8,14 +8,10 @@ header {
     background-repeat: no-repeat;
 }
 body {
-<<<<<<< HEAD
     background-image: url("Fotos/Fondo.png");
-=======
-    background-image: url(Fotos/Fondo.png);
->>>>>>> 0ee63653269d972d618a08a401ef390eba3557fa
     background-size: height=500%;
     font-family: Arial, sans-serif;
-    
+
 }
 
 
