@@ -13,13 +13,6 @@ body {
     font-family: Arial, sans-serif;
 
 }
-
-#Empresalogo {
-    position: relative;
-    top: -68px;
-    left: 100px;
-    
-}
 .input {
     border: none;
     outline: none;
@@ -37,11 +30,18 @@ body {
 
   }
 
-
+  #Empresalogo {
+    position: relative;
+    top: -68px;
+    left: 100px; }
 
 #title-image {
     height: 200px;
     padding: 20px;
+}
+
+#logo {
+    height: 80px;
 }
 
 #welcome {
