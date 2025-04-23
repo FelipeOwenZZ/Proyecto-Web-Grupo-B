@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'OuterWildsFont';
+  src: url('Font/OUTERWILDSFONT.ttf') format('truetype');
+}
+
 header {
   height: 450px;
   background-color: black;
@@ -10,7 +15,7 @@ header {
 body {
   background-image: url("Fotos/Fondo.png");
   background-size: height=500%;
-  font-family: Arial, sans-serif;
+  font-family: 'OuterWildsFont', Arial, sans-serif;
 }
 
 .input {
@@ -44,10 +49,11 @@ body {
   height: 80px;
 }
 
-#welcome{
-  text-align: center;
-  padding: 0px 50px;
-  font-size: 25px;
+#welcome {
+    text-align: center; /* Asegura que el texto esté alineado al centro */
+    padding: 0px 50px; /* Conserva el padding original */
+    font-size: 25px; /* Mantén el tamaño de fuente */
+    transform: translateX(-2px); /* Ajusta este valor en función del desplazamiento visual */
 }
 
 #lema {
@@ -91,7 +97,7 @@ DL {
 }
 
 * {
-  font-family: 'Space Mono', monospace;
+  font-family: 'OuterWildsFont', 'Space Mono', monospace;
   color: whitesmoke;
 }
 
