@@ -53,7 +53,6 @@ body {
     text-align: center; /* Asegura que el texto esté alineado al centro */
     padding: 0px 50px; /* Conserva el padding original */
     font-size: 25px; /* Mantén el tamaño de fuente */
-    transform: translateX(-2px); /* Ajusta este valor en función del desplazamiento visual */
 }
 
 #lema {
