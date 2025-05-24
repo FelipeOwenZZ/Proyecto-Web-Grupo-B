@@ -3,6 +3,7 @@
   src: url('Font/OUTERWILDSFONT.ttf') format('truetype');
 }
 
+
 header {
   height: 450px;
   background-color: black;
@@ -14,11 +15,8 @@ header {
 
 body {
   background-image: url("Fotos/Fondo.png");
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: height=500%;
   font-family: 'OuterWildsFont', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 .input {
@@ -27,7 +25,7 @@ body {
   border-radius: 15px;
   padding: 0.5em;
   background-color: #ccc;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
   transition: 300ms ease-in-out;
   color: black;
 }
@@ -94,7 +92,7 @@ body {
   height: 150px;
 }
 
-dl {
+DL {
   text-align: center;
 }
 
@@ -127,6 +125,7 @@ form {
   padding: 20px;
 }
 
+/* login */
 #login-button {
   background: linear-gradient(45deg, #ff6347, #ff8c69);
   color: white;
@@ -168,7 +167,7 @@ form {
 
 section {
   display: flex;
-  align-items: stretch;
+  align-items: auto;
   justify-content: space-between;
   padding: 0px 100px;
   max-width: 1000px;
@@ -190,6 +189,7 @@ section ul li {
   font-size: 30px;
 }
 
+/* Er video */
 .video-container {
   width: 100%;
   margin: 20px 0;
@@ -204,11 +204,8 @@ section ul li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-#contribuciones,
-#objetivos,
-#faq,
-#equipo,
-section#Textovid {
+/* sección de contribuciones */
+#contribuciones {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,6 +251,16 @@ section#Textovid {
   color: #aaa;
 }
 
+/* sección de objetivos */
+
+#objetivos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 #objetivos h2 {
   color: #ffb347;
   margin-bottom: 20px;
@@ -278,6 +285,16 @@ section#Textovid {
   color: #e0e0e0;
   font-size: 0.9em;
   line-height: 1.6;
+}
+
+/* sección de faq */
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #faq h2 {
@@ -330,6 +347,8 @@ section#Textovid {
   line-height: 1.5;
 }
 
+/* barra de navegacion */
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -359,6 +378,8 @@ section#Textovid {
 .navbar li a:hover {
   background-color: #111;
 }
+
+/* El reproductor de musica */
 
 .container {
   width: 80px;
@@ -424,7 +445,7 @@ section#Textovid {
   cursor: pointer;
 }
 
-.play-btn:checked + .play-icon {
+.play-btn:checked+.play-icon {
   clip-path: polygon(0 100%, 0% 100%, 100% 100%);
 }
 
@@ -456,12 +477,12 @@ section#Textovid {
   right: 0;
 }
 
-.play-btn:checked ~ .pause-icon::before {
+.play-btn:checked~.pause-icon::before {
   animation: reveal 300ms ease-in-out 350ms 1;
   animation-fill-mode: forwards;
 }
 
-.play-btn:checked ~ .pause-icon::after {
+.play-btn:checked~.pause-icon::after {
   animation: reveal 300ms ease-in-out 600ms 1;
   animation-fill-mode: forwards;
 }
@@ -474,6 +495,8 @@ section#Textovid {
     width: 35%;
   }
 }
+
+/* boton de donar */
 
 .btn {
   background-color: #000000;
@@ -505,6 +528,8 @@ section#Textovid {
 .btn:active {
   background-color: #ff5e00;
 }
+
+/* Footer */
 
 footer {
   background-color: #000000;
@@ -598,6 +623,8 @@ footer {
   color: #ffb347;
 }
 
+/* Estilo de mas sobre nosotros */
+
 #equipo {
   display: flex;
   flex-direction: column;
@@ -625,277 +652,4 @@ footer {
   color: #e0e0e0;
   font-size: 0.9em;
   line-height: 1.6;
-}
-
-
-@media (max-width: 768px) {
-  header {
-    height: auto;
-    min-height: 120px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-  }
-
-  #Empresalogo {
-    position: static;
-    height: 40px;
-    margin-top: 5px;
-    flex-shrink: 0;
-    top: auto;
-    left: auto;
-  }
-
-  header form {
-    position: static;
-    text-align: right;
-    max-width: 170px;
-    flex-shrink: 1;
-    margin-left: 10px;
-    padding: 0;
-  }
-
-  header form label {
-    display: block;
-    margin-bottom: 2px;
-    font-size: 0.75em;
-    color: #f0f0f0;
-  }
-
-  header form .input {
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.3);
-    margin-bottom: 4px;
-    width: 100%;
-    font-size: 0.85em;
-  }
-  header form .input:focus {
-    transform: scale(1.02);
-  }
-
-  header form #login-button {
-    padding: 6px 10px;
-    border-radius: 18px;
-    margin-top: 2px;
-    font-size: 0.8em;
-    float: right;
-    position: static;
-  }
-   header form #login-button::before { display: none; }
-
-
-  .container {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    z-index: 1001;
-  }
-
-  .play-icon {
-    width: 20px;
-    height: 20px;
-  }
-  .pause-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  nav.navbar {
-    padding: 0;
-    overflow: hidden;
-  }
-
-  nav.navbar > ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 3px 0px;
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    background-color: #333;
-  }
-
-  nav.navbar > ul.navbar > li {
-    flex: 0 0 auto;
-    margin: 0;
-    float: none;
-  }
-
-  nav.navbar > ul.navbar > li > a {
-    padding: 8px 12px;
-    font-size: 0.85em;
-    border-bottom: none;
-  }
-
-  #title-image {
-    height: auto;
-    max-height: 120px;
-    width: auto;
-    max-width: 80%;
-    padding: 15px;
-    margin: 10px auto;
-  }
-
-  #welcome {
-    padding: 10px 15px;
-    font-size: 18px;
-  }
-
-  #lema {
-    font-size: 16px;
-    padding: 10px 15px;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin: 8px 0;
-    font-size: 1.4em;
-  }
-  h1 { font-size: 1.5em; }
-  h2 { font-size: 1.3em; }
-  h3 { font-size: 1.1em; }
-
-
-  section {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 15px;
-  }
-  section#Textovid {
-      text-align: center;
-  }
-
-
-  #foto1, #foto2, aside img, aside .gif {
-    float: none;
-    display: block;
-    margin: 10px auto;
-    max-width: 90%;
-    height: auto;
-  }
-
-  .gif {
-    height: 100px;
-  }
-  
-  section ul {
-      padding-left: 0;
-      width: 100%;
-  }
-  section ul li {
-    font-size: 16px;
-    margin-bottom: 8px;
-    margin-left: 20px;
-  }
-
-  .video-container {
-    margin: 15px 0;
-  }
-  .video-container video {
-    height: auto;
-  }
-
-  #contribuciones, #objetivos, #faq, #equipo {
-    margin-top: 15px;
-    padding: 15px 10px;
-  }
-  
-  #contribuciones h2, #objetivos h2, #faq h2 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-  }
-
-  .contribucion-tier, .objetivo-tier, .integrante, .faq-card {
-    width: 95%;
-    max-width: 480px;
-    padding: 12px;
-    margin-bottom: 12px;
-  }
-
-  .contribucion-tier h3, .objetivo-tier h3, .integrante h3 {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-  }
-  .contribucion-tier p, .objetivo-tier p, .integrante p {
-    font-size: 0.9em;
-  }
-   .contribucion-tier p:last-child {
-    font-size: 0.85em;
-  }
-
-
-  .faq-container {
-    width: 95%;
-    max-width: 480px;
-    gap: 10px;
-  }
-  .faq-card summary {
-    padding: 12px 0;
-    font-size: 1em;
-  }
-   .faq-card summary::after {
-       right: 10px;
-   }
-  .faq-card p {
-    padding-bottom: 12px;
-    font-size: 0.9em;
-  }
-  
-  .btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-    margin: 15px auto;
-  }
-
-  footer {
-    padding: 15px 10px;
-    margin-top: 25px;
-  }
-  .footer-content {
-    gap: 12px;
-  }
-  .social-icons, .official-link, .legal-links span {
-    padding: 8px 12px;
-    max-width: 95%;
-  }
-  .social-icons {
-    gap: 8px;
-  }
-  .social-icons span:first-child {
-    font-size: 0.85em;
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  .social-icons .icon {
-    font-size: 1.6em;
-    margin: 0 4px;
-  }
-  .social-icons .icon img {
-      height: 22px;
-      width: 22px;
-  }
-  .official-link {
-    padding: 10px 15px;
-    font-size: 1em;
-    margin: 8px 0;
-  }
-  .legal-links {
-    gap: 8px;
-  }
-  .legal-links span {
-    font-size: 0.9em;
-  }
-  #disqus_thread { padding: 15px 10px; }
-  #logo {
-      display: block;
-      margin: 10px auto;
-  }
 }
