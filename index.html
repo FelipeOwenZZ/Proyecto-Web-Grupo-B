@@ -8,12 +8,12 @@
 </head>
 <body>
   <header>
-    <form>
+    <form aria-label="Formulario de inicio de sesión" autocomplete="on">
       <label for="usuario">Usuario</label>
-      <input class="input" type="text" name="usuario" id="usuario" placeholder="Usuario" />
+      <input class="input" type="text" name="usuario" id="usuario" placeholder="Usuario" aria-required="true" aria-label="Usuario" />
       <label for="contraseña">Contraseña</label>
-      <input class="input" type="password" name="contraseña" id="contraseña" placeholder="Contraseña" />
-      <button id="login-button" type="submit">Iniciar Sesión</button>
+      <input class="input" type="password" name="contraseña" id="contraseña" placeholder="Contraseña" aria-required="true" aria-label="Contraseña" />
+      <button id="login-button" type="submit" aria-label="Iniciar sesión">Iniciar Sesión</button>
     </form>  
     <div class="container">
       <label>
@@ -29,19 +29,19 @@
 
     <img src="Fotos/Empresalogo.png" alt="Empresalogo" id="Empresalogo">
   </header>
-  <nav class="navbar">
-    <ul nav class="navbar">
-      <li><a href="#welcome">Inicio</a></li>
-      <li><a href="#Textovid">Donaciones</a></li>
-      <li><a href="#contribuciones">Contribuciones</a></li>
-      <li><a href="#objetivos">Objetivos</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#disqus_thread">Comentarios</a></li>
-      <li><a href="#equipo">Equipo</a></li>
+  <nav class="navbar" aria-label="Navegación principal">
+    <ul class="navbar" role="menubar">
+      <li role="none"><a role="menuitem" href="#welcome" tabindex="0">Inicio</a></li>
+      <li role="none"><a role="menuitem" href="#Textovid" tabindex="0">Donaciones</a></li>
+      <li role="none"><a role="menuitem" href="#contribuciones" tabindex="0">Contribuciones</a></li>
+      <li role="none"><a role="menuitem" href="#objetivos" tabindex="0">Objetivos</a></li>
+      <li role="none"><a role="menuitem" href="#faq" tabindex="0">FAQ</a></li>
+      <li role="none"><a role="menuitem" href="#disqus_thread" tabindex="0">Comentarios</a></li>
+      <li role="none"><a role="menuitem" href="#equipo" tabindex="0">Equipo</a></li>
     </ul>
   </nav>
-  <main>
-    <img src="Fotos/Titulo.png" alt="Titulofoto" id="title-image">
+  <main tabindex="0" aria-label="Contenido principal">
+    <img src="Fotos/Titulo.png" alt="Título del juego Outer Wilds" id="title-image" />
     <h1 id="welcome">Bienvenido al Sistema Solar de OuterWilds <br>
       donde podrás explorar libremente un universo completamente nuevo como un Hatchling. 
       <br>Pero, ¿no es extraño?
@@ -56,12 +56,13 @@
         <li>Amplio sistema solar con inmensidad de secretos que descubrir.</li><br>
         <li>Mundo abierto con libertad total de principio a fin.</li><br>
         <li>Carismáticos compañeros espaciales con los que compartir tus vivencias.</li> 
+        <li>Outer Wilds</li> 
       </ul>
       </div>
 
       <aside>
-        <img src="Fotos/Foto1.webp" alt="Foto1" id="foto1"/>
-        <div><img src="Gifs/gif1.gif" alt="gif1" class="gif"/></div>
+        <img src="Fotos/Foto1.webp" alt="Imagen del sistema solar de Outer Wilds" id="foto1"/>
+        <div><img src="Gifs/gif1.gif" alt="Animación de exploración espacial" class="gif"/></div>
       </aside>
     </section>
     <section>
@@ -74,14 +75,14 @@
         </ul>
       </div>
       <aside>
-        <img src="Fotos/Foto2.webp" alt="Foto2" id="foto2"/>
-        <div><img src="Gifs/gif2.gif" alt="gif2" class="gif"/></div>
+        <img src="Fotos/Foto2.webp" alt="Imagen de planeta misterioso" id="foto2"/>
+        <div><img src="Gifs/gif2.gif" alt="Animación de descubrimiento en Outer Wilds" class="gif"/></div>
       </aside>
     </section>
 
     <section>
       <div class="video-container">
-        <video width="100%" height="500" controls>
+        <video width="100%" height="500" controls aria-label="Tráiler de Outer Wilds">
           <source src="Videos/Video.mp4" type="video/mp4">
           Tu navegador no soporta el elemento de video.
         </video>
@@ -162,7 +163,7 @@
       </div>
     </section>
     
-    <section><img src="Fotos/Textosdecorativos.png" alt="Textosdecorativos" id="decoracion2"></section>
+    <section><img src="Fotos/Textosdecorativos.png" alt="Decoración visual de la página" id="decoracion2" /></section>
     <section id="disqus_thread"> </section>
     <section id="equipo">
       <h1>Más sobre nosotros</h1>
@@ -197,7 +198,7 @@
         <p><strong>Tarea:</strong> [Diseñador de fuente]</p>
         <p><strong>Rol:</strong> [Diseñador de escenarios]</p>
       </div>
-      <aside><img src="Fotos/Logo.png" alt="Logo" id="logo"></aside>
+      <aside><img src="Fotos/Logo.png" alt="Logo de Outer Wilds" id="logo"></aside>
     </section>
     <section><p>ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no
       representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 24/25
@@ -210,11 +211,11 @@
     <div class="footer-content">
       <div class="social-icons">
         <span>Siguenos en nuestras redes sociales:</span>
-        <span class="icon"><img src="Fotos/bskylogo.png" alt="bskylogo"></span>
-        <span class="icon"><img src="Fotos/faceboocklogo.png" alt="faceboocklogo"></span>
-        <span class="icon"><img src="Fotos/xlogo.png" alt="xlogo"></span>
-        <span class="icon"><img src="Fotos/linkedin.png" alt="linkedin"></span>
-        <span class="icon"><img src="Fotos/instagramlogo.png" alt="instagramlogo"></span>
+        <span class="icon"><img src="Fotos/bskylogo.png" alt="Logo de Bluesky"></span>
+        <span class="icon"><img src="Fotos/faceboocklogo.png" alt="Logo de Facebook"></span>
+        <span class="icon"><img src="Fotos/xlogo.png" alt="Logo de X (Twitter)"></span>
+        <span class="icon"><img src="Fotos/linkedin.png" alt="Logo de LinkedIn"></span>
+        <span class="icon"><img src="Fotos/instagramlogo.png" alt="Logo de Instagram"></span>
       </div>
       <div class="official-link">
         <span>Outer Wilds página oficial</span>
